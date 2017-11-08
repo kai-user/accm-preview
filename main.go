@@ -34,10 +34,6 @@ import (
 	"github.com/spf13/pflag"
 )
 
-// func init() {
-// 	healthz.DefaultHealthz()
-// }
-
 func main() {
 	s := options.NewCloudControllerManagerServer()
 	s.AddFlags(pflag.CommandLine)
