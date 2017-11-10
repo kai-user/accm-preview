@@ -1,4 +1,4 @@
-[sig-network] Networking should provide Internet connection for containers [Conformance] # do not support ping
+#[sig-network] Networking should provide Internet connection for containers [Conformance] # do not support ping
 [sig-network] Network should set TCP CLOSE_WAIT timeout # do not support GetSigner
 [sig-network] Services should be able to create a functioning NodePort service # could not connect locally
 
