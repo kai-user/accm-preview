@@ -30,6 +30,7 @@ pipeline {
                 K8S_AZURE_global_skip_files = "$WORKSPACE/.jenkins/skip.txt"
                 K8S_AZURE_manifest = 'linux_ccm'
                 K8S_AZURE_subject = "PR$ghprbPullId"
+                K8S_AZURE_version_id = "$ghprbActualCommit"
             }
             steps {
                 withDockerContainer ([image: "${env.TEST_IMAGE}"]) {
