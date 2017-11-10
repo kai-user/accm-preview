@@ -18,7 +18,7 @@ limitations under the License.
 package main
 
 import (
-	"fmt"
+ 	"fmt"
 	"os"
 
 	"github.com/Azure/kubernetes-azure-cloud-controller-manager/pkg/azureprovider"
