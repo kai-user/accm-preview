@@ -5,8 +5,9 @@ SHELL=/bin/bash -o pipefail
 BIN_DIR=bin
 PKG_CONFIG=.pkg_config
 TEST_RESULTS_DIR=testResults
-# TODO: fix code and remove disabled options
-GOMETALINTER_OPTION=--tests -D deadcode -D gocyclo -D vetshadow -D gas -D ineffassign
+# TODO: fix code and enable more options
+# -E deadcode -E gocyclo -E vetshadow -E gas -E ineffassign
+GOMETALINTER_OPTION=--tests --disable-all -E gofmt -E vet -E golint
 
 all: $(BIN_DIR)/azure-cloud-controller-manager
 
